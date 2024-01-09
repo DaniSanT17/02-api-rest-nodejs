@@ -1,0 +1,19 @@
+meta {
+  name: Resumo transação
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3333/transactions/4100fd6f-c7a2-48b0-818a-ace0d335804c
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Freelancer",
+    "amount": 8000,
+    "type": "credit"
+  }
+}

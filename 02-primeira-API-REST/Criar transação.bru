@@ -1,0 +1,19 @@
+meta {
+  name: Criar transação
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3333/transactions/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Wage",
+    "amount": 4000,
+    "type": "credit"
+  }
+}
